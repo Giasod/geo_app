@@ -2,5 +2,5 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
+import "leaflet"
+import "./map"
