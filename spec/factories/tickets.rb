@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :ticket do
     request_number { '09252012-00001' }
@@ -10,7 +12,7 @@ FactoryBot.define do
     well_known_text { 'POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))' }
 
     after(:create) do |ticket|
-      create(:excavator, ticket: ticket)
+      create(:excavator, ticket:)
     end
   end
 end
