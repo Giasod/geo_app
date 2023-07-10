@@ -10,4 +10,9 @@ correct work, so I made the `WellKnownText` parameter mandatory.
 
 On the frontend side of things I used `bootstrap` for css and `leaflet` for the map.
 
+To add new Tickets, use the following url:
+
+POST to
+`https://geo-service-ombn.onrender.com/api/v1/tickets`
+
 About the app: ruby version 3.2.0, rails version 7.0.6, postgres version 14.6.
