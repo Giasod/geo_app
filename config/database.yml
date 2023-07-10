@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: test_geospatial_production
-  username: test_geospatial
-  password: <%= ENV["TEST_GEOSPATIAL_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
