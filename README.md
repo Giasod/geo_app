@@ -6,7 +6,8 @@ I used gems `rgeo` and `rgeo-geojson` for these purposes, for tests I used `RSpe
 `FactoryBot`, `rubocop` for linter and `active_model_serializers` for serialization.
 
 This was not mentioned in the task, but I thought that it's vital for the application's
-correct work, so I made the `WellKnownText` parameter mandatory.
+correct work, so I made the `WellKnownText` for Ticket and `CompanyName` for Excavator 
+mandatory.
 
 On the frontend side of things I used `bootstrap` for css and `leaflet` for the map.
 
