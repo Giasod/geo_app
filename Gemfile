@@ -7,6 +7,7 @@ ruby '3.2.0'
 
 gem 'rails', '~> 7.0.6'
 
+gem 'active_model_serializers'
 gem 'bootsnap', require: false
 gem 'cssbundling-rails'
 gem 'jbuilder'
