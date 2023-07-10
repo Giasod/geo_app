@@ -28,3 +28,11 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Ignore IDE files
+.idea
+
+# Ignore MacOS files
+.DS_Store
+.AppleDouble
+.LSOverride

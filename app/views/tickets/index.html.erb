@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Tickets</h1>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Ticket request number</th>
+      <th scope="col">Ticket primary service area code</th>
+      <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <th scope="row"><%= ticket.id %></th>
+        <td><%= ticket.request_number %></td>
+        <td><%= ticket.primary_service_area_code %></td>
+        <td>
+          <%= link_to 'Show', ticket_path(ticket), class: 'btn btn-primary' %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

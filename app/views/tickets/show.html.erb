@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Ticket Details</h1>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Ticket request number: <%= @ticket.request_number %></h5>
+      <p class="card-text">Primary service area code: <%= @ticket.primary_service_area_code %></p>
+      <%= link_to 'Back to tickets', tickets_path, class: 'btn btn-primary mt-3' %>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Ticket Map:</h5>
+      <div id="map" data-geojson='<%= @geojson.to_json.html_safe %>' style="height: 500px; width: 100%;"></div>
+    </div>
+  </div>
+</div>
